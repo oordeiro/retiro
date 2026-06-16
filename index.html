@@ -3,12 +3,15 @@
 <head>
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
+<link rel="icon" type="image/x-icon" href="favicon.ico">
 <title>Retiro de Homens 2027</title>
 <script src="https://cdnjs.cloudflare.com/ajax/libs/tailwindcss/2.2.19/tailwind.min.css"></script>
 <script src="https://cdn.tailwindcss.com"></script>
 <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;600;700;800&display=swap" rel="stylesheet">
 <style>
   body{font-family:'Poppins',sans-serif;}
+  .zebra-table tbody tr:nth-child(odd)  { background-color: #ffffff; }
+  .zebra-table tbody tr:nth-child(even) { background-color: #f9fafb; }
   .hero-bg{
     background: linear-gradient(rgba(0,0,0,0.55), rgba(0,0,0,0.6)), url('https://6a2ff2f3d2c53535166c1ea9.ix.net/Capa%20Site.jpeg?w=1094&h=737&fm=avif');
     background-size: cover;
@@ -51,7 +54,7 @@
   <div class="w-24 h-1 bg-yellow-400 mb-6"></div>
   <p class="text-lg md:text-2xl mb-8 font-light">De <span class="font-bold">26 a 28</span> de Março de 2027</p>
 
-  <a href="https://docs.google.com/forms/d/e/1FAIpQLSezNts2b_xfn8iEE1kqLausS8qDCCMhKdL1HNkTY7TXWbejqA/viewform?usp=publish-editor" target="_blank" class="bg-yellow-400 class="bg-yellow-400 text-black font-bold px-8 py-4 rounded-full text-lg hover:bg-yellow-300 transition mb-12">INSCREVA-SE JÁ!</a>
+  <a href="https://docs.google.com/forms/d/e/1FAIpQLSezNts2b_xfn8iEE1kqLausS8qDCCMhKdL1HNkTY7TXWbejqA/viewform?usp=publish-editor" target="_blank" class="bg-yellow-400 text-black font-bold px-8 py-4 rounded-full text-lg hover:bg-yellow-300 transition mb-12">INSCREVA-SE JÁ!</a>
 
   <div class="flex gap-4 md:gap-8">
     <div class="bg-white/10 rounded-xl px-4 md:px-6 py-3 backdrop-blur-sm">
@@ -123,7 +126,7 @@
   <div class="mb-8">
     <h3 class="text-xl md:text-2xl font-bold mb-4 text-yellow-500">Dia 26 de Março</h3>
     <div class="bg-white rounded-xl shadow overflow-hidden">
-      <table class="w-full text-sm md:text-base">
+      <table class="w-full text-sm md:text-base zebra-table">
         <thead class="bg-gray-900 text-white">
           <tr>
             <th class="text-left p-4 font-semibold">Horário</th>
@@ -132,12 +135,12 @@
           </tr>
         </thead>
         <tbody>
-          <tr class="border-b border-gray-100">
+          <tr>
             <td class="p-4 font-medium whitespace-nowrap">12:00h</td>
-            <td class="p-4">Aloço</td>
+            <td class="p-4">Almoço</td>
             <td class="p-4 text-gray-600">Recepção, Chek In, Almoço e Preparação para atividades da tarde.</td>
           </tr>
-          <tr class="border-b border-gray-100 bg-gray-50">
+          <tr>
             <td class="p-4 font-medium whitespace-nowrap">14:00h às 17:00h</td>
             <td class="p-4">Boas-Vindas</td>
             <td class="p-4 text-gray-600">
@@ -150,14 +153,12 @@
           <tr>
             <td class="p-4 font-medium whitespace-nowrap">19:00h</td>
             <td class="p-4">Culto</td>
-            <td class="p-4 text-gray-600">Louvor, testemunho, mesnsagem e participação especial.</td>
-              </td> 
+            <td class="p-4 text-gray-600">Louvor, testemunho, mensagem e participação especial.</td> 
           </tr>
                   <tr>
             <td class="p-4 font-medium whitespace-nowrap">21:00h</td>
             <td class="p-4">Encontro de Jovens</td>
-            <td class="p-4 text-gray-600">Reflexão com rapazes em torno da fogueira com Pr. Loren ipsum</td>
-              </td> 
+            <td class="p-4 text-gray-600">Reflexão com rapazes em torno da fogueira com Pr. Loren ipsum</td> 
           </tr>
           <tr>
             <td class="p-4 font-medium whitespace-nowrap">22:00h</td>
@@ -173,7 +174,7 @@
   <div class="mb-8">
     <h3 class="text-xl md:text-2xl font-bold mb-4 text-yellow-500">Dia 27 de Março</h3>
     <div class="bg-white rounded-xl shadow overflow-hidden">
-      <table class="w-full text-sm md:text-base">
+      <table class="w-full text-sm md:text-base zebra-table">
         <thead class="bg-gray-900 text-white">
           <tr>
             <th class="text-left p-4 font-semibold">Horário</th>
@@ -182,12 +183,12 @@
           </tr>
         </thead>
         <tbody>
-          <tr class="border-b border-gray-100">
+          <tr>
             <td class="p-4 font-medium whitespace-nowrap">07:00h</td>
             <td class="p-4">Café com reflexão</td>
             <td class="p-4 text-gray-600">Devocional matinal com Pr. Loren ipsum e café da manhã</td>
           </tr>
-          <tr class="border-b border-gray-100 bg-gray-50">
+          <tr>
             <td class="p-4 font-medium whitespace-nowrap">09:00h</td>
             <td class="p-4">Palestra da Manhã</td>
             <td class="p-4 text-gray-600">
@@ -198,8 +199,7 @@
           <tr>
             <td class="p-4 font-medium whitespace-nowrap">19:00h</td>
             <td class="p-4">Culto</td>
-            <td class="p-4 text-gray-600">Louvor, testemunho, mesnsagem e participação especial.</td>
-              </td> 
+            <td class="p-4 text-gray-600">Louvor, testemunho, mensagem e participação especial.</td> 
           </tr>
           <tr>
             <td class="p-4 font-medium whitespace-nowrap">21:00h</td>
@@ -215,7 +215,7 @@
   <div class="mb-12">
     <h3 class="text-xl md:text-2xl font-bold mb-4 text-yellow-500">Dia 28 de Março</h3>
     <div class="bg-white rounded-xl shadow overflow-hidden">
-      <table class="w-full text-sm md:text-base">
+      <table class="w-full text-sm md:text-base zebra-table">
         <thead class="bg-gray-900 text-white">
           <tr>
             <th class="text-left p-4 font-semibold">Horário</th>
@@ -224,12 +224,12 @@
           </tr>
         </thead>
         <tbody>
-          <tr class="border-b border-gray-100">
+          <tr>
             <td class="p-4 font-medium whitespace-nowrap">07:00h</td>
             <td class="p-4">Café com reflexão</td>
             <td class="p-4 text-gray-600">Devocional matinal com Pr. Loren ipsum e café da manhã</td>
           </tr>
-          <tr class="border-b border-gray-100 bg-gray-50">
+          <tr>
             <td class="p-4 font-medium whitespace-nowrap">09:00h</td>
             <td class="p-4">Palestra da manhã</td>
             <td class="p-4 text-gray-600">
@@ -269,7 +269,7 @@
           </tr>
         </thead>
         <tbody class="text-gray-700">
-          <tr class="border-b border-gray-100">
+          <tr>
             <td class="p-4">Em até 10x no boleto </td>
             <td class="p-4 text-center font-bold">R$ 280,00 <span class="block text-xs text-gray-400">(cartão com taxas)</span></td>
           </tr>
@@ -286,7 +286,7 @@
           </tr>
         </thead>
         <tbody class="text-gray-700">
-          <tr class="border-b border-gray-100">
+          <tr>
             <td class="p-4">Em até 2x no boleto </td>
             <td class="p-4 text-center font-bold">R$ 320,00 <span class="block text-xs text-gray-400">(cartão com taxas)</span></td>
           </tr>
@@ -303,7 +303,7 @@
           </tr>
         </thead>
         <tbody class="text-gray-700">
-          <tr class="border-b border-gray-100">
+          <tr>
             <td class="p-4">Em até 1x no boleto </td>
             <td class="p-4 text-center font-bold">R$ 370,00 <span class="block text-xs text-gray-400">(cartão com taxas)</span></td>
           </tr>
@@ -351,7 +351,7 @@
 
   // ===== CONTAGEM REGRESSIVA =====
   // EDITAR AQUI: ano, mês (0=Jan...11=Dez), dia, hora, minuto do evento
-  const eventDate = new Date(2027, 2, 26, 12, 0, 0); // 11/Set/2026 às 18:00
+  const eventDate = new Date(2027, 2, 26, 12, 0, 0); // 26/Mar/2027 às 12:00
 
   function updateCountdown(){
     const now = new Date();
