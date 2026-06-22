@@ -291,7 +291,16 @@
     <h2 class="text-3xl md:text-5xl font-extrabold mb-4 text-gray-900">Inscrições</h2>
     <div class="w-16 h-1 bg-gray-900 mx-auto mb-10"></div>
 
-    <div class="bg-white rounded-2xl shadow-lg overflow-hidden mb-8">
+    <div class="bg-white rounded-2xl shadow-lg overflow-hidden mb-8 relative">
+      <!-- Selo Esgotado -->
+      <div class="absolute inset-0 flex items-center justify-center z-10 pointer-events-none">
+        <div style="transform: rotate(-20deg);">
+          <div class="border-8 border-red-600 rounded-lg px-6 py-3 opacity-80">
+            <span class="text-red-600 font-extrabold text-4xl uppercase tracking-widest" style="text-shadow: 1px 1px 0 #fff;">ESGOTADO</span>
+          </div>
+        </div>
+      </div>
+      <div class="opacity-40">
       <table class="w-full text-left">
         <thead class="bg-gray-900 text-white">
           <tr>
@@ -306,9 +315,19 @@
           </tr>
         </tbody>
       </table>
+      </div>
     </div>
 
-        <div class="bg-white rounded-2xl shadow-lg overflow-hidden mb-8">
+        <div class="bg-white rounded-2xl shadow-lg overflow-hidden mb-8 relative">
+      <!-- Selo Esgotado -->
+      <div class="absolute inset-0 flex items-center justify-center z-10 pointer-events-none">
+        <div style="transform: rotate(-20deg);">
+          <div class="border-8 border-red-600 rounded-lg px-6 py-3 opacity-80">
+            <span class="text-red-600 font-extrabold text-4xl uppercase tracking-widest" style="text-shadow: 1px 1px 0 #fff;">ESGOTADO</span>
+          </div>
+        </div>
+      </div>
+      <div class="opacity-40">
       <table class="w-full text-left">
         <thead class="bg-gray-900 text-white">
           <tr>
@@ -323,6 +342,7 @@
           </tr>
         </tbody>
       </table>
+      </div>
     </div>
 
         <div class="bg-white rounded-2xl shadow-lg overflow-hidden mb-8">
